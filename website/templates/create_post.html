@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Criar um post</h1>
+
+<form method="POST">
+  <input
+      type="text"
+      id="sport"
+      name="sport"
+      class="form-control"
+      placeholder="Insira o esporte"
+    />
+    <br />
+    <input
+      type="text"
+      id="place"
+      name="place"
+      class="form-control"
+      placeholder="Insira o endereço do local onde a atividade física será realizada"
+    />
+    <br />
+    <input
+      type="text"
+      id="phone"
+      name="phone"
+      class="form-control"
+      placeholder="Insira um telefone ou whatsapp para que as pessoas possam entrar em contato com você"
+    />
+    <br />
+    <textarea name="text" id="text" class="form-control" 
+  placeholder="Insira uma descrição da atividade física que será realizada"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-lg btn-primary">Postar</button>
+  </div>
+</form>
+<br />
+<div align="center">
+  <a href="/home"
+    ><button type="button" class="btn btn-lg btn-secondary">Voltar</button></a
+  >
+</div>
+{% endblock %}
